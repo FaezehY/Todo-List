@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+
+  <body>
+    <h1>Todo List</h1>
+    <!--before Refactoring-->
+    <!--<button id="displayTodosButton">Display Todos</button>-->
+    <!--<button id="toggleAllButton">Toggle All</button>-->
+    
+    <div>
+      <button onclick="handler.toggleAll()">Toggle All</button>
+    </div>
+
+    <div>
+      <button onclick="handler.addTodo()">Add</button>
+      <input id="addTodoTextInput" type="text">
+    </div>
+    
+    <div>
+      <button onclick="handler.changeTodo()">Change Todo</button>
+      <input id="changeTodoPositionInput" type="number">
+      <input id="changeTodoTextInput" type="text">
+    </div>
+    
+    <div>
+      <button onclick="handler.toggleCompleted()">Toggle Completed</button>
+      <input id="togglecompletedPositionInput" type="number">
+    </div>
+    
+    <!--we need to dynamically add item to the list-->
+    <!--we need to insert list item into the DOM-->
+    <ul>
+    </ul>
+    
+    
+    <script src="script.js"></script>
+  </body>
+
+</html>
